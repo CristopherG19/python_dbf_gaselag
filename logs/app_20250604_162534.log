@@ -1,0 +1,21 @@
+2025-06-04 16:25:34,526 - INFO - Iniciando la aplicación
+2025-06-04 16:25:39,244 - INFO - Campos de fecha detectados: ['RETFEC', 'FECHAPROG', 'FECHAING', 'F_INST', 'F_RECLAMO']
+2025-06-04 16:25:39,244 - INFO - Campos lógicos detectados: ['MASIVO']
+2025-06-04 16:25:39,946 - INFO - Datos cargados correctamente desde C:/Users/CRISTOPHER/Desktop/GASELAG_430.dbf. Dimensiones: (10188, 47)
+2025-06-04 16:25:39,953 - INFO - Primeras filas de los campos de fecha:
+       RETFEC   FECHAPROG    FECHAING      F_INST   F_RECLAMO
+0  16/05/2025  19/05/2025  09/05/2025  30/01/2020  09/05/2025
+1  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+2  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+3  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+4  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+2025-06-04 16:25:39,960 - INFO - Primeras filas de los campos lógicos:
+   MASIVO
+0    True
+1    True
+2    True
+3    True
+4    True
+2025-06-04 16:25:39,967 - INFO - Cargando filas progresivamente...
+2025-06-04 16:25:53,437 - INFO - Carga completada: 10188 filas cargadas en el Treeview
+2025-06-04 16:25:53,437 - INFO - Ajustando columnas según contenido...
