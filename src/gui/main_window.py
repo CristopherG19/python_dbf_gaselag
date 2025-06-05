@@ -1,4 +1,5 @@
 # src/gui/main_window.py
+import logging
 import tkinter as tk
 from tkinter import ttk
 import os
@@ -29,6 +30,8 @@ def load_new_file(tree, root, row_label, total_label):
             current_file = file_path
             root.title(os.path.basename(file_path))
             load_rows_progressively(tree, new_df, row_label=row_label, total_label=total_label)
+        else:
+            logging.warning(f"No se pudo cargar el archivo {file_path}. No se cargaron datos.")
 
 def show_data_in_grid(df=None):
     global df_full, current_file

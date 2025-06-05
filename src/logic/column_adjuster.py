@@ -11,6 +11,10 @@ def auto_adjust_columns(tree):
     font_name = ttk.Style().lookup('Treeview', 'font')
     font_obj = font.nametofont(font_name) if font_name else font.Font(family='TkDefaultFont', size=10)
     
+    if df_full is None:
+        logging.warning("No hay datos cargados (df_full es None). Saltando ajuste de columnas.")
+        return
+    
     for col in tree['columns']:
         header_width = font_obj.measure(col.title())
         sample_size = min(500, len(df_full))

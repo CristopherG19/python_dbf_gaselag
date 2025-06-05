@@ -1,0 +1,38 @@
+2025-06-04 19:25:09,571 - INFO - Starting the application
+2025-06-04 19:25:17,765 - WARNING - Invalid password for user admin.
+2025-06-04 19:25:25,950 - INFO - User admin authenticated successfully.
+2025-06-04 19:25:29,269 - INFO - Campos de fecha detectados: ['RETFEC', 'FECHAPROG', 'FECHAING', 'F_INST', 'F_RECLAMO']
+2025-06-04 19:25:29,269 - INFO - Campos lógicos detectados: []
+2025-06-04 19:25:29,271 - INFO - Datos cargados correctamente desde //MARCOS-PC/Organismo de Inspección - GASELAG/03. Servicios de verificaciones/2.- Verificación Posterior VP/1.- Solicitud - Cargas de Contrastación/2025/CS Comas - Arnold Utrilla/GASELAG_410_.dbf. Dimensiones: (1, 47)
+2025-06-04 19:25:29,276 - INFO - Primeras filas de los campos de fecha:
+       RETFEC   FECHAPROG    FECHAING      F_INST   F_RECLAMO
+0  23/01/2025  24/01/2025  15/01/2025  13/10/2018  27/12/2024
+2025-06-04 19:25:29,277 - INFO - Primeras filas de los campos lógicos:
+Empty DataFrame
+Columns: []
+Index: [0]
+2025-06-04 19:25:29,277 - INFO - Cargando filas progresivamente...
+2025-06-04 19:25:29,292 - INFO - Carga completada: 1 filas cargadas en el Treeview
+2025-06-04 19:25:29,292 - INFO - Ajustando columnas según contenido...
+2025-06-04 19:25:29,293 - WARNING - No hay datos cargados (df_full es None). Saltando ajuste de columnas.
+2025-06-04 19:25:32,943 - INFO - Campos de fecha detectados: ['RETFEC', 'FECHAPROG', 'FECHAING', 'F_INST', 'F_RECLAMO']
+2025-06-04 19:25:32,943 - INFO - Campos lógicos detectados: ['MASIVO']
+2025-06-04 19:25:32,978 - INFO - Datos cargados correctamente desde //MARCOS-PC/Organismo de Inspección - GASELAG/03. Servicios de verificaciones/2.- Verificación Posterior VP/1.- Solicitud - Cargas de Contrastación/2025/CS Comas - Arnold Utrilla/GASELAG_418.dbf. Dimensiones: (271, 47)
+2025-06-04 19:25:32,982 - INFO - Primeras filas de los campos de fecha:
+       RETFEC   FECHAPROG    FECHAING      F_INST   F_RECLAMO
+0  27/03/2025  28/03/2025  18/03/2025  19/11/2024  18/03/2025
+1  27/03/2025  28/03/2025  18/03/2025  15/11/2024  18/03/2025
+2  27/03/2025  28/03/2025  18/03/2025  18/12/2024  18/03/2025
+3  27/03/2025  28/03/2025  18/03/2025  17/12/2024  18/03/2025
+4  27/03/2025  28/03/2025  18/03/2025  17/12/2024  18/03/2025
+2025-06-04 19:25:32,983 - INFO - Primeras filas de los campos lógicos:
+   MASIVO
+0    True
+1    True
+2    True
+3    True
+4    True
+2025-06-04 19:25:32,984 - INFO - Cargando filas progresivamente...
+2025-06-04 19:25:33,415 - INFO - Carga completada: 271 filas cargadas en el Treeview
+2025-06-04 19:25:33,415 - INFO - Ajustando columnas según contenido...
+2025-06-04 19:25:33,415 - WARNING - No hay datos cargados (df_full es None). Saltando ajuste de columnas.
