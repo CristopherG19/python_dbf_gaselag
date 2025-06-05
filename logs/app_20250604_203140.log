@@ -1,0 +1,64 @@
+2025-06-04 20:31:41,000 - INFO - Starting the application
+2025-06-04 20:31:47,415 - INFO - User admin authenticated successfully.
+2025-06-04 20:31:51,353 - INFO - Campos de fecha detectados: ['RETFEC', 'FECHAPROG', 'FECHAING', 'F_INST', 'F_RECLAMO']
+2025-06-04 20:31:51,353 - INFO - Campos lógicos detectados: []
+2025-06-04 20:31:51,829 - INFO - Datos cargados correctamente desde //MARCOS-PC/Organismo de Inspección - GASELAG/03. Servicios de verificaciones/2.- Verificación Posterior VP/1.- Solicitud - Cargas de Contrastación/2025/CS Comas - Arnold Utrilla/GASELAG_414.dbf. Dimensiones: (4374, 47)
+2025-06-04 20:31:51,835 - INFO - Primeras filas de los campos de fecha:
+       RETFEC   FECHAPROG    FECHAING      F_INST   F_RECLAMO
+0  19/02/2025  20/02/2025  12/02/2025  23/07/2020  12/02/2025
+1  19/02/2025  20/02/2025  12/02/2025  21/07/2020  12/02/2025
+2  19/02/2025  20/02/2025  12/02/2025  21/07/2020  12/02/2025
+3  19/02/2025  20/02/2025  12/02/2025  10/08/2020  12/02/2025
+4  19/02/2025  20/02/2025  12/02/2025  19/10/2020  12/02/2025
+2025-06-04 20:31:51,836 - INFO - Primeras filas de los campos lógicos:
+No logical fields
+2025-06-04 20:31:51,838 - INFO - Loading rows progressively...
+2025-06-04 20:31:57,431 - INFO - Load completed: 4374 rows loaded in Treeview
+2025-06-04 20:31:57,431 - INFO - Adjusting columns based on content...
+2025-06-04 20:31:57,438 - INFO - Column 'NIS' adjusted to 62 pixels
+2025-06-04 20:31:57,445 - INFO - Column 'NROMEDIDOR' adjusted to 85 pixels
+2025-06-04 20:31:57,452 - INFO - Column 'DIAMETRO' adjusted to 69 pixels
+2025-06-04 20:31:57,452 - INFO - Column 'CLASE' adjusted to 48 pixels
+2025-06-04 20:31:57,459 - INFO - Column 'RETFEC' adjusted to 78 pixels
+2025-06-04 20:31:57,466 - INFO - Column 'RETHOR' adjusted to 55 pixels
+2025-06-04 20:31:57,473 - INFO - Column 'FECHAPROG' adjusted to 78 pixels
+2025-06-04 20:31:57,480 - INFO - Column 'FECHAING' adjusted to 78 pixels
+2025-06-04 20:31:57,486 - INFO - Column 'TEL_CLIE' adjusted to 62 pixels
+2025-06-04 20:31:57,493 - INFO - Column 'HORAPROG' adjusted to 71 pixels
+2025-06-04 20:31:57,500 - INFO - Column 'CUS' adjusted to 74 pixels
+2025-06-04 20:31:57,506 - INFO - Column 'F_INST' adjusted to 78 pixels
+2025-06-04 20:31:57,513 - INFO - Column 'MARCAMED' adjusted to 77 pixels
+2025-06-04 20:31:57,514 - INFO - Column 'RECLAMANTE' adjusted to 82 pixels
+2025-06-04 20:31:57,540 - INFO - Column 'NOMCLIE' adjusted to 342 pixels
+2025-06-04 20:31:57,548 - INFO - Column 'DIR_PROC' adjusted to 608 pixels
+2025-06-04 20:31:57,555 - INFO - Column 'DIR_CATA' adjusted to 694 pixels
+2025-06-04 20:31:57,563 - INFO - Column 'TIPO_AFE' adjusted to 67 pixels
+2025-06-04 20:31:57,569 - INFO - Column 'RESOL' adjusted to 48 pixels
+2025-06-04 20:31:57,576 - INFO - Column 'ITIN' adjusted to 38 pixels
+2025-06-04 20:31:57,583 - INFO - Column 'AOL' adjusted to 44 pixels
+2025-06-04 20:31:57,584 - INFO - Column 'CORRECARTA' adjusted to 75 pixels
+2025-06-04 20:31:57,591 - INFO - Column 'NROCARGA' adjusted to 69 pixels
+2025-06-04 20:31:57,597 - INFO - Column 'EMISOR' adjusted to 58 pixels
+2025-06-04 20:31:57,598 - INFO - Column 'ESPECIAL' adjusted to 62 pixels
+2025-06-04 20:31:57,605 - INFO - Column 'RECONSI' adjusted to 61 pixels
+2025-06-04 20:31:57,612 - INFO - Column 'F_RECLAMO' adjusted to 78 pixels
+2025-06-04 20:31:57,618 - INFO - Column 'HRPROM' adjusted to 62 pixels
+2025-06-04 20:31:57,625 - INFO - Column 'HRABAS' adjusted to 71 pixels
+2025-06-04 20:31:57,632 - INFO - Column 'REGABAS' adjusted to 64 pixels
+2025-06-04 20:31:57,639 - INFO - Column 'EMPRESA' adjusted to 65 pixels
+2025-06-04 20:31:57,645 - INFO - Column 'MASIVO' adjusted to 58 pixels
+2025-06-04 20:31:57,652 - INFO - Column 'RUTA' adjusted to 44 pixels
+2025-06-04 20:31:57,654 - INFO - Column 'CGV' adjusted to 47 pixels
+2025-06-04 20:31:57,661 - INFO - Column 'DB_MODE' adjusted to 129 pixels
+2025-06-04 20:31:57,667 - INFO - Column 'DB_AFAB' adjusted to 65 pixels
+2025-06-04 20:31:57,674 - INFO - Column 'DBQ_MAX' adjusted to 69 pixels
+2025-06-04 20:31:57,681 - INFO - Column 'DBQ_MIN' adjusted to 68 pixels
+2025-06-04 20:31:57,688 - INFO - Column 'DBQ_PERM' adjusted to 75 pixels
+2025-06-04 20:31:57,694 - INFO - Column 'DBQ_TRAN' adjusted to 71 pixels
+2025-06-04 20:31:57,699 - INFO - Column 'REF_DIR_CA' adjusted to 390 pixels
+2025-06-04 20:31:57,704 - INFO - Column 'REF_DIR_PR' adjusted to 390 pixels
+2025-06-04 20:31:57,710 - INFO - Column 'CUP' adjusted to 92 pixels
+2025-06-04 20:31:57,717 - INFO - Column 'TIPO_DSEG' adjusted to 123 pixels
+2025-06-04 20:31:57,724 - INFO - Column 'CUA' adjusted to 213 pixels
+2025-06-04 20:31:57,731 - INFO - Column 'TARIFA' adjusted to 87 pixels
+2025-06-04 20:31:57,732 - INFO - Column 'RECLAMO' adjusted to 66 pixels

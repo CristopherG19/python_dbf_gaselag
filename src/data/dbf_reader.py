@@ -14,7 +14,8 @@ def load_dbf_data(file_path):
         date_fields.clear()
         logical_fields.clear()
         date_fields.extend([field.name for field in table.fields if field.type == 'D'])
-        logical_fields.extend([field.name for field in table.fields if field.type == 'L'])
+        # Excluir el campo MASIVO de los campos lógicos
+        logical_fields.extend([field.name for field in table.fields if field.type == 'L' and field.name != 'MASIVO'])
         logging.info(f"Campos de fecha detectados: {date_fields}")
         logging.info(f"Campos lógicos detectados: {logical_fields}")
         
@@ -33,6 +34,9 @@ def load_dbf_data(file_path):
                                 new_record[field_name] = ""
                         else:
                             new_record[field_name] = value.strftime('%d/%m/%Y') if pd.notnull(value) else ""
+                    elif field_name == 'MASIVO' and value:
+                        # Tratar MASIVO como texto, no como lógico
+                        new_record[field_name] = value.decode('latin1').strip() if isinstance(value, bytes) else str(value).strip()
                     elif field_name in logical_fields:
                         new_record[field_name] = convert_logical(value)
                     elif isinstance(value, bytes):
@@ -47,7 +51,7 @@ def load_dbf_data(file_path):
         df = pd.DataFrame(data)
         logging.info(f"Datos cargados correctamente desde {file_path}. Dimensiones: {df.shape}")
         logging.info(f"Primeras filas de los campos de fecha:\n{df[date_fields].head()}")
-        logging.info(f"Primeras filas de los campos lógicos:\n{df[logical_fields].head()}")
+        logging.info(f"Primeras filas de los campos lógicos:\n{df[logical_fields].head() if logical_fields else 'No logical fields'}")
         return df
     except Exception as e:
         logging.error(f"Error al cargar el archivo DBF {file_path}: {str(e)}")

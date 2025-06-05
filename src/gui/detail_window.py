@@ -66,8 +66,8 @@ def show_details(event, tree, df_full, current_file):
     
     for i, (col, val) in enumerate(zip(columns, values)):
         ttk.Label(scrollable_frame, text=f"{col}:", font=('Arial', 10, 'bold'), 
-                 anchor='e', width=15).grid(row=i, column=0, sticky='e', pady=2)
-        
+             anchor='e', width=15).grid(row=i, column=0, sticky='e', pady=2)
+    
         if col in date_fields:
             entry = DateEntry(scrollable_frame, width=27, font=('Arial', 10), date_pattern='dd/mm/yyyy')
             if val and val.strip():
@@ -75,8 +75,8 @@ def show_details(event, tree, df_full, current_file):
                     date_obj = datetime.strptime(val, '%d/%m/%Y')
                     entry.set_date(date_obj)
                 except ValueError as e:
-                    logging.warning(f"Error al parsear fecha en {col}: {val}, {str(e)}")
-                    entry.set_date(datetime.now())
+                        logging.warning(f"Error al parsear fecha en {col}: {val}, {str(e)}")
+                        entry.set_date(datetime.now())
             else:
                 entry.set_date(datetime.now())
             entry.grid(row=i, column=1, sticky='w', padx=5)
@@ -86,10 +86,11 @@ def show_details(event, tree, df_full, current_file):
             entry.grid(row=i, column=1, sticky='w', padx=5)
             entry.get = var.get
         else:
+            # MASIVO caerá aquí y se mostrará como Entry
             entry = ttk.Entry(scrollable_frame, width=30, font=('Arial', 10))
             entry.insert(0, str(val).strip())
             entry.grid(row=i, column=1, sticky='w', padx=5)
-        
+    
         detail_entries.append(entry)
     
     btn_frame = ttk.Frame(scrollable_frame)

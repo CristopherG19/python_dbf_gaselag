@@ -17,6 +17,9 @@ def save_to_file(df_full):
                     df_to_save[col] = df_to_save[col].apply(lambda x: x if x else "")
                 for col in logical_fields:
                     df_to_save[col] = df_to_save[col].apply(lambda x: "S" if x is True else "N" if x is False else "")
+                # Validar MASIVO para asegurar que solo contenga S o N
+                if 'MASIVO' in df_to_save.columns:
+                    df_to_save['MASIVO'] = df_to_save['MASIVO'].apply(lambda x: x if x in ['S', 'N'] else '')
                 df_to_save.to_csv(output_file, index=False, encoding='utf-8')
                 logging.info(f"Datos guardados en {output_file}")
                 messagebox.showinfo("Éxito", f"Datos guardados en:\n{output_file}")

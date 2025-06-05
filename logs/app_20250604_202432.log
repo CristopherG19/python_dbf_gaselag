@@ -1,0 +1,18 @@
+2025-06-04 20:24:32,077 - INFO - Starting the application
+2025-06-04 20:24:36,755 - INFO - User admin authenticated successfully.
+2025-06-04 20:24:42,575 - INFO - Campos de fecha detectados: ['RETFEC', 'FECHAPROG', 'FECHAING', 'F_INST', 'F_RECLAMO']
+2025-06-04 20:24:42,576 - INFO - Campos lógicos detectados: []
+2025-06-04 20:24:43,662 - INFO - Datos cargados correctamente desde //MARCOS-PC/Organismo de Inspección - GASELAG/03. Servicios de verificaciones/2.- Verificación Posterior VP/1.- Solicitud - Cargas de Contrastación/2025/CS Comas - Arnold Utrilla/GASELAG_430.dbf. Dimensiones: (10188, 47)
+2025-06-04 20:24:43,673 - INFO - Primeras filas de los campos de fecha:
+       RETFEC   FECHAPROG    FECHAING      F_INST   F_RECLAMO
+0  16/05/2025  19/05/2025  09/05/2025  30/01/2020  09/05/2025
+1  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+2  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+3  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+4  16/05/2025  19/05/2025  09/05/2025  03/07/2020  09/05/2025
+2025-06-04 20:24:43,674 - INFO - Primeras filas de los campos lógicos:
+No logical fields
+2025-06-04 20:24:43,680 - INFO - Cargando filas progresivamente...
+2025-06-04 20:24:56,874 - INFO - Carga completada: 10188 filas cargadas en el Treeview
+2025-06-04 20:24:56,874 - INFO - Ajustando columnas según contenido...
+2025-06-04 20:24:56,874 - WARNING - No hay datos cargados (df_full es None). Saltando ajuste de columnas.

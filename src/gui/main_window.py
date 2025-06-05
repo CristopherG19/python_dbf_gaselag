@@ -26,12 +26,12 @@ def load_new_file(tree, root, row_label, total_label):
             for col in tree["columns"]:
                 tree.heading(col, text=col)
                 tree.column(col, width=120, anchor='w', stretch=False)
-            df_full = new_df
+            df_full = new_df  # Actualizar df_full para otros usos
             current_file = file_path
             root.title(os.path.basename(file_path))
             load_rows_progressively(tree, new_df, row_label=row_label, total_label=total_label)
         else:
-            logging.warning(f"No se pudo cargar el archivo {file_path}. No se cargaron datos.")
+            logging.warning(f"Failed to load file {file_path}. No data loaded.")
 
 def show_data_in_grid(df=None):
     global df_full, current_file
